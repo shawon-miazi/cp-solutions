@@ -6,6 +6,7 @@ int main()
     cin >> t;
     while (t--)
     {
+        int a;
         long long int n, k;
         cin >> n >> k;
         if ((n % 2 != k % 2) || ((k * k) > n))
