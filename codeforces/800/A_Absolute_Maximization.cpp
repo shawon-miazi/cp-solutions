@@ -22,7 +22,6 @@ int main()
             min=( min & arr[j]);
         }
         cout<<max-min<<endl;
-        
     }
     return 0;
 }
