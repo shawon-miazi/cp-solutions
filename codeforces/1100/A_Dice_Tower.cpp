@@ -19,9 +19,6 @@ int main()
             ck[arr[i][j]] = true;
             ck[7 - arr[i][j]] = true;
         }
-        for (int i = 1; i < 8; i++)
-            cout << ck[i] << " ";
-            cout<<endl;
         if (ck[x] == true || ck[y] == true)
             f = 1;
     }
