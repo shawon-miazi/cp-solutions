@@ -24,15 +24,22 @@ void createprime (int n)
 int main() {
 	int t;
 	cin>>t;
-    createprime(50);
-    for (int i=0,l=primes.size();i<l;i++)
-    cout<<primes[i]<<" ";
-    cout<<endl;
+    createprime(1000000);
+    // for (int i=0,l=primes.size();i<l;i++)
+    // cout<<primes[i]<<" ";
+    // cout<<endl;
 	while (t--)
 	{
-	    long long int a,va=1;
+	    int a;
         cin>>a;
-        
+        vector<long long int >arr(a+1,1);
+        cout<<arr[0]<<" ";
+        for (long long int i=1,j=0;i<a;i++,j++)
+        {
+            arr[i]*=primes[j];
+            arr[i+1]*=primes[j];
+            cout<<arr[i]<<" ";
+        }
         cout<<endl;
 	}
 
