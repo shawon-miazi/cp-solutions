@@ -46,7 +46,7 @@ int main()
             c++;
             else
             d++;
-            if (i<(n-k))
+            
         }
         cout<<ot<<" ";
         if (c!=fre[0] || d!=fre[1])
