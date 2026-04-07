@@ -8,9 +8,7 @@ int main() {
 	{
 	    int n;
 	    cin>>n;
-        if (n>=0 && n<=67)
-	    cout<<n+1<<endl;
-        else 
+        
         cout<<n<<endl;
         
 	}
