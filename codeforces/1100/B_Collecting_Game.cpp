@@ -37,23 +37,6 @@ int main()
                     ar[arr[i].second] = i;
             }
         }
-        // for (int i = 0; i < n; i++)
-        // {
-        //     cnt = 0;
-        //     presum += arr[i].first;
-        //     sum = presum;
-        //     for (int j = i + 1; j < n; j++)
-        //     {
-        //         if (sum >= arr[j].first)
-        //         {
-        //             cnt++;
-        //             sum += arr[j].first;
-        //         }
-        //         else
-        //             break;
-        //     }
-        //     ar[arr[i].second] = i + cnt;
-        // }
         for (int i = 0; i < n; i++)
             cout << ar[i] << " ";
         cout << endl;
