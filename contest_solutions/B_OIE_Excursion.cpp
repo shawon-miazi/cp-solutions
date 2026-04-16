@@ -22,6 +22,7 @@ int main()
                 a=max(cnt,a);
                 cnt=1;
             }
+            
         }
         if (a<m)
         cout<<"YES"<<endl;
