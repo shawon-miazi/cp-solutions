@@ -6,7 +6,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        long long int n, k, a, b, val, x = 0, mx = INT_MAX, y = 0, my = INT_MAX;
+        long long int n, k, a, b, val, x = 0, mx = INT64_MAX, y = 0, my = INT64_MAX;
         cin >> n >> k >> a >> b;
         vector<vector<long long int>> arr(n, vector<long long int>(2, 0));
         vector<vector<long long int>> ma(k, vector<long long int>(2, 0));
