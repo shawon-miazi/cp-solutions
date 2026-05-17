@@ -8,7 +8,7 @@ int main()
     {
         long long int n,x=0,mg=0,g=0;
         cin>>n;
-        vector<int>arr(n),psum(n,0);
+        vector<long long int>arr(n),psum(n,0);
         for (int i=0;i<n;i++)
         {
             cin>>arr[i];
