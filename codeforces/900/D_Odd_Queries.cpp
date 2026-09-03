@@ -9,27 +9,25 @@ int main()
         int n,q;
         cin>>n>>q;
         int arr[n];
-        long long int sum;
+        long long int sum=0;
+        vector<long long int>psum(n,0);
         for (int i=0;i<n;i++)
         {
             cin>>arr[i];
+            sum+=arr[i];
+            psum[i]=sum;
         }
         int l,r,k;
         for (int i=0;i<q;i++)
         {
             cin>>l>>r>>k;
-            sum=0;
-            for (int o=0;o<n;o++)
-            {
-                if (o>=l-1 && o<=r-1)
-                {
-                    sum+=k;
-                }
-                else 
-                sum+=arr[o];
-                // cout<<sum<<" ";
-            }
-            if (sum%2==1)
+            long long int temp,nsum;
+            if (l-2>=0)
+            temp=psum[r-1]-psum[l-2];
+            else 
+            temp=psum[r-1];
+            nsum=sum-temp+(k*(r-l+1));
+            if (nsum&1)
             cout<<"YES"<<endl;
             else 
             cout<<"NO"<<endl;
