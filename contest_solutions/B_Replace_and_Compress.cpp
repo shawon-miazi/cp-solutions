@@ -42,11 +42,15 @@ void solve()
 {
     string s;
     cin>>s;
-    int cnt=1,n=s.size();
-    for (int i=0;i<n;i++)
+    int cnt=1,f=0,l=0,n=s.size();
+    for (int i=0;i<n-1;i++)
     {
-        
+        if (s[i-1]==s[i] && s[i+1]==s[i])
+        f=1;
+        if (s[i-1]==s[i+1] && s[i-1]!=s[i])
+        l=1;
     }
+    cout<<cnt+f+l<<endl;
 }
 
 int main()
