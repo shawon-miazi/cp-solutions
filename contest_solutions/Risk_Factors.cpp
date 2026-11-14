@@ -56,19 +56,18 @@ void solve()
         if (fre[s[i] - 'a'] != 0)
         {
             cnt++;
+            if (cnt==k)
+            {
+                l=i;
+            }
+            
         }
-        ar[i] = cnt;
-        if (ar[i] >= k)
+        if (cnt==k)
+        {
             val++;
+        }
     }
-    for (int i = 0; i < n; i++)
-    {
-        int temp = cnt - ar[i];
-        if (temp >= k)
-            val++;
-        else
-            break;
-    }
+    
     cout << val << endl;
 }
 
